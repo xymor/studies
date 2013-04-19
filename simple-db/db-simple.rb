@@ -15,6 +15,11 @@ class Database
   	@@db.delete name
   end   
   
+  def numequalto(value)
+  	  counter = 0
+  	  @@db.each_value{|v| counter+=1}
+  	  puts "#{counter} entries with value #{value}"
+  end
 
 end
 
