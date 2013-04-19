@@ -8,7 +8,7 @@ class Database
   end 
   
   def get(name)
-  	puts @@db["#{name}"]
+  	puts @@db[name]
   end 
   
   def unset(name)
