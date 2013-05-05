@@ -14,9 +14,9 @@ class Database
   end 
   
   def get(name)
-  	last = transactions.find_index{ |t| t.key == name }
-  	if last
-  		transactions[last][name]
+    last_index = transactions.rindex(|t| t.get(name))
+  	if last_index
+  		transactions[-last_index][name]
   	else		
   		@@db[name] 
   end 
@@ -30,17 +30,7 @@ class Database
   end   
   
   def numequalto(value)
-  	values_in_transactions = transactions.collect do |t| 
-  		 
-  		t.each_value
-  	end{ |t| t.value == value }
-  	if last
-  		transactions[last][name]
-  	else			
-  	  counter = 0
-  	  @@db.each_value{|v| counter+=1}
-  	  counter
-  	end	  
+ 
   end
   
   def begin
