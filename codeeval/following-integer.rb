@@ -8,6 +8,8 @@
 #  list will be. The number of 1s, 2s, ..., 9s is fixed but the number of 0s 
 #  is arbitrary. 
 
+# This code doesn't rank. It's too slow.
+
 def next_int(number) 
 	seq = ( number.to_s.chars.to_a + ["0"] ).permutation.to_a.sort.uniq.map{ | i | 
 		i.join('').to_i
