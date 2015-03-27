@@ -1,4 +1,4 @@
-//Codeeval gives me a 10, says my code is slow but it's so shiny
+//Codeeval gives me a 10/100, says my code is slow but it's so shiny
 
 object Main extends App{
   //val args = Array("4","3","3","5","7")
